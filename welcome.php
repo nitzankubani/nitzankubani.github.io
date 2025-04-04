@@ -1,8 +1,7 @@
-<html>
-<body>
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?>
+<?php
 
-</body>
-</html>
+echo Welcome $_GET["name"]; <br>
+Your email address is: $_GET["email"];
+
+?>
