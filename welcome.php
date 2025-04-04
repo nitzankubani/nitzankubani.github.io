@@ -1,7 +1,11 @@
 
 <?php
 
-echo Welcome $_GET["name"]; <br>
-Your email address is: $_GET["email"];
+
+
+echo "Welcome " . htmlspecialchars($_GET["name"]) . "<br>";
+echo "Your email address is: " . htmlspecialchars($_GET["email"]);
+
+
 
 ?>
