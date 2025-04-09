@@ -1,23 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="function.js"></script>
-    <title>Document</title>
+    <title>Send Email Form</title>
 </head>
 <body>
-    <h1>my name is big nitzan!</h1>
-    <h2>YEA...kkkjlmm</h2>
-    <form action="welcome.php" method="POST">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
-        <input type="submit">
-        </form>
+    <h1>Contact Form</h1>
+    <form action="send_email.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-        
-         <button onclick="adding(3,4)">Click Me!</button> 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
+        <input type="submit" value="Send">
+    </form>
 </body>
 </html>
